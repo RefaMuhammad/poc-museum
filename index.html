@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Info - Arca Ganesha</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <!-- Header -->
+        <div class="header">
+            <div class="container">
+                <h1 class="text-center mb-3">General Info</h1>
+                <div class="text-center">
+                    <div class="language-label mb-2">Pilih Bahasa</div>
+                    <div class="language-link mb-2" data-translate="select-lang">Select Language</div>
+                    <div class="language-selector d-flex justify-content-center gap-3">
+                        <button class="lang-btn active" data-lang="id">
+                            <svg width="32" height="32" viewBox="0 0 32 32">
+                                <rect width="32" height="16" fill="#dc143c"/>
+                                <rect y="16" width="32" height="16" fill="#fff"/>
+                            </svg>
+                        </button>
+                        <button class="lang-btn" data-lang="en">
+                            <svg width="32" height="32" viewBox="0 0 32 32">
+                                <rect width="32" height="32" fill="#012169"/>
+                                <path d="M0 0 L32 21.33" stroke="#fff" stroke-width="3.5"/>
+                                <path d="M32 0 L0 21.33" stroke="#fff" stroke-width="3.5"/>
+                                <path d="M0 0 L32 21.33" stroke="#c8102e" stroke-width="2"/>
+                                <path d="M32 0 L0 21.33" stroke="#c8102e" stroke-width="2"/>
+                                <path d="M0 10.67 L32 10.67" stroke="#fff" stroke-width="5.33"/>
+                                <path d="M16 0 L16 32" stroke="#fff" stroke-width="5.33"/>
+                                <path d="M0 10.67 L32 10.67" stroke="#c8102e" stroke-width="3.2"/>
+                                <path d="M16 0 L16 32" stroke="#c8102e" stroke-width="3.2"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="container content-section">
+            <div class="row">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <h2 class="info-title mb-3" data-translate="title">Arca Ganesha</h2>
+                    <img src="Picture1.png" alt="Arca Ganesha" class="exhibition-image img-fluid">
+                </div>
+                <div class="col-lg-8">
+                    <div class="info-content">
+                        <div class="info-section mb-4">
+                            <h3 class="info-section-title" data-translate="origin-label">Primary Info :</h3>
+                            <p class="info-section-text" data-translate="origin-value">
+                                Asal & Periode: Sejumlah arca Ganesha di Museum Nasional berasal dari periode klasik Jawa (abad ke-8 sampai ke-13). Salah satu arca terkenal berasal dari Candi Banon (abad ke-8/9).
+                            </p>
+                        </div>
+                        <div class="info-section mb-4">
+                            <h3 class="info-section-title" data-translate="function-label">Makna & Fungsi:</h3>
+                            <p class="info-section-text" data-translate="function-value">
+                                Ganesha—berkepala gajah—adalah dewa Hindu yang identik dengan pengetahuan, kebijaksanaan, dan penghapusan rintangan. Arca semacam ini sering ditempatkan di pintu atau tepi tempat suci untuk kemudahan dan kesuksesan dalam beribadah.
+                            </p>
+                        </div>
+                        <div class="info-section">
+                            <h3 class="info-section-title" data-translate="collection-label">Catatan koleksi:</h3>
+                            <p class="info-section-text" data-translate="collection-value">
+                                Arca Ganesha Candi Banon dianggap karya agung seni pahat Jawa Kuno. Museum Nasional menyimpan beberapa arca Ganesha yang lain dengan berbagai ragam bentuk dan gaya, menampilkan kekayaan budaya Hindu-Buddha di Nusantara.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="action-section text-center py-4">
+                        <p class="action-question mb-1" data-translate="history-question">
+                            Apakah anda ingin mendengarkan sejarahnya lebih lanjut ?
+                        </p>
+                        <p class="action-question-en mb-4" data-translate="history-question-en">
+                            Would you like to hear more about the history?
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <button class="btn btn-no px-5" data-translate="no">No</button>
+                            <button class="btn btn-yes px-5" data-translate="yes" onclick="window.location.href='ai.html'">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
