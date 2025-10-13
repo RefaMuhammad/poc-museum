@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Digital Indonesia - Arca Ganesha</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>General Info</h1>
+        </div>
+
+        <div class="top-bar">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Museum Digital Indonesia" class="logo-image">
+            </div>
+            <div class="language-selector">
+                <img src="assets/images/flag_id.png" 
+                    alt="Bahasa Indonesia" 
+                    class="lang-flag active" 
+                    onclick="switchLanguage('id')" 
+                    title="Bahasa Indonesia">
+                <img src="assets/images/flag_en.png" 
+                    alt="English" 
+                    class="lang-flag" 
+                    onclick="switchLanguage('en')" 
+                    title="English">
+            </div>
+        </div>
+
+        <div class="question-section">
+            <p class="question-text" id="question-text"></p>
+            <a href="#" class="question-link" id="question-link"></a>
+        </div>
+
+        <button class="yes-button" id="yes-button" onclick="window.location.href='ai.html'">Yes</button>
+
+        <div class="content-section">
+            <div class="model-container">
+                 <h2 class="model-title" id="model-title"></h2>
+                <div id="ganesha-model"></div>
+            </div>
+            <div class="info-section" id="info-content"></div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
